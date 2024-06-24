@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="quote">quote-1</p>
+    <button onclick="showQuote()">Show quote</button>
+  </body>
+</html>
+
+<script>
+  // event, getElementById, innerText
+  let count = 0;
+  function showQuote() {
+    count++;
+    console.log(count);
+    document.getElementById("quote").innerText = "quote-2";
+    if (count == 2) {
+      document.getElementById("quote").innerText = "quote-3";
+    }
+    // res = quote;
+    // console.log(res);
+  }
+</script>

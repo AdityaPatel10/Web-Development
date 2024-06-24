@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="res">Display Language here</h1>
+    <input type="text" placeholder="enter unit" id="unit"/>
+    <select id="lang">
+      <option value="Javascript">Javascript</option>
+      <option value="c">c</option>
+      <option value="c++">c++</option>
+      <option value="Java">Java</option>
+    </select>
+    <button onclick="selectLang()">Select language</button>
+  </body>
+</html>
+
+<script>
+  function selectLang() {
+    let selectedLang = document.getElementById("lang").value;
+    let selectedUnit = document.getElementById("unit").value;
+    document.getElementById("res").innerText = selectedLang +" "+ selectedUnit;
+    console.log(selectedLang +" "+ selectedUnit);
+  }
+</script>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="enterednames">Showentered name here</h1>
+    <input id="name" type="text" placeholder="enter name" value="" />
+    <button onclick="getName()">Get Name</button>
+  </body>
+</html>
+
+<script>
+  function getName() {
+    let enteredName = document.getElementById("name").value;
+    document.getElementById("enterednames").innerText = enteredName;
+  }
+</script>
