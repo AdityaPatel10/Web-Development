@@ -1,0 +1,97 @@
+/* Basic styling for the body to center the calculator on the screen */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+/* Styling for the calculator container */
+#calculator {
+  width: 90%;
+  max-width: 400px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px 0;
+  border-radius: 40px;
+  background-color: white;
+}
+
+/* Styling for the display area of the calculator */
+#display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 60px;
+  margin: auto;
+  border-radius: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 0 20px;
+  font-size: 22px;
+  background-color: #e0e0e0;
+  word-wrap: break-word;
+}
+
+/* Styling for the keyboard area of the calculator */
+#keyboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 80px);
+  gap: 10px;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+/* Styling for each key in the keyboard */
+#keyboard > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  /* background-color: white; */
+}
+
+/* Hover effect for keys */
+#keyboard > div:hover {
+  cursor: pointer;
+  background-color: gray;
+}
+
+/* Styling for special keys with different colors */
+.black {
+  background-color: black;
+  color: white;
+}
+
+.orange {
+  background-color: orangered;
+  color: white;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  #keyboard > div {
+    font-size: 18px;
+  }
+
+  #display {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #keyboard > div {
+    font-size: 16px;
+  }
+
+  #display {
+    font-size: 18px;
+  }
+}

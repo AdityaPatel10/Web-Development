@@ -1,0 +1,51 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: background-color 0.5s;
+}
+
+/* Image Styles */
+.image {
+    height: auto;
+    width: 200px;
+    border-radius: 30px;
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    /* Initially hide the image */
+    transition: opacity 1.5s;
+}
+
+/* Button Styles */
+.bttn {
+    border: 2px solid black;
+    background-color: white;
+    font-size: 20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Button Hover Styles */
+.bttn:hover {
+    background-color: lightblue;
+    font-size: 25px;
+}
+
+/* Header Styles */
+.h1 {
+    font-size: 40px;
+    font-family: cursive;
+}
