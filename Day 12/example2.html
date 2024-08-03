@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(8, 100px);
+        gap: 20px;
+      }
+      #container > div {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Create 10 divs, 4 divs per row</button>
+    <div id="container">
+      <!-- 10 idvs -->
+    </div>
+  </body>
+</html>
+
+<script>
+  document.querySelector("button").addEventListener("click", myDiv);
+
+  function myDiv() {
+    for (let i = 0; i < 19; i++) {
+      let div = document.createElement("div");
+      div.innerText = i + 1;
+      document.querySelector("#container").append(div);
+    }
+  }
+</script>

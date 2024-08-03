@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- form send data to backend -->
+    <form>
+      <input type="text" placeholder="enter name" />
+      <input type="number" placeholder="enter number" />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
+
+<script>
+  document.querySelector("form").addEventListener("submit", myValue);
+
+  function myValue(event) {
+    event.preventDefault();
+    let name = document.querySelector("input[type= text]").value;
+    let number = document.querySelector("input[type= number]").value;
+    console.log(name);
+    console.log(number);
+  }
+</script>

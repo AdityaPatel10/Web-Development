@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+
+<script>
+  // createElement("elementName")
+  // step:1 create h1 tag
+  let head = document.createElement("h1");
+  let para = document.createElement("p");
+
+  // step:2 add innerText
+  head.innerText = "Welcome to javaScript";
+  para.innerText = "Welcome to javaScript";
+
+  // strep:3 add/append tag to body
+  document.querySelector("body").append(para, head);
+</script>
