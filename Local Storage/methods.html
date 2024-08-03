@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="storeName()">Store name to LS</button>
+    <button onclick="getName()">Get name to LS</button>
+
+    <button onclick="storeArray()">Store array to LS</button>
+    <button onclick="getArray()">Get array from LS</button>
+  </body>
+</html>
+
+<script>
+  // store name to LS -> username - "masai school"
+
+  function storeName() {
+    localStorage.setItem("username", "Aditya");
+  }
+
+  function getName() {
+    let x = localStorage.getItem("username");
+    console.log(x);
+  }
+
+  let arr = [1, 2, 3, 4];
+  function storeArray() {
+    localStorage.setItem("Array", JSON.stringify(arr));
+  }
+
+  function getArray() {
+    let array = JSON.parse(localStorage.getItem("Array"));
+    console.log(array);
+    console.log(array[3]);
+  }
+</script>

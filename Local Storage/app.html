@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body > div {
+        display: flex;
+      }
+
+      body > div > p {
+        margin-right: 10px;
+      }
+      img {
+        width: 200px;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKhW4ivaEb1soYDvlPaf7ZKI7gMdJ6K21-Aw&s"
+      alt=""
+    />
+    <div>
+      <p>Likes: <span id="like">0</span></p>
+      <p>Dislikes: <span id="dislike">0</span></p>
+    </div>
+
+    <button onclick="likeFunc()">Like 👍</button>
+    <button onclick="dislikeFunc()">Dislike 👎</button>
+  </body>
+</html>
+
+<script>
+  let like_count = localStorage.getItem("like_img") || 0
+
+  document.querySelector("#like").innerText = like_count;
+
+  let dislike_count = localStorage.getItem("dislike_img") || 0
+  document.querySelector("#dislike").innerText = dislike_count;
+
+  function likeFunc() {
+    like_count++;
+    document.querySelector("#like").innerText = like_count;
+    localStorage.setItem("like_img", like_count);
+  }
+
+  function dislikeFunc() {
+    dislike_count++;
+    document.querySelector("#dislike").innerText = dislike_count;
+    localStorage.setItem("dislike_img", dislike_count);
+  }
+</script>

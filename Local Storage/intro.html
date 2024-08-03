@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Local Storage</h1>
+  </body>
+</html>
+
+<script>
+  // storing strings
+  // setItems("key", "value")
+
+  localStorage.setItem("movie", "Avenger");
+
+  localStorage.setItem("hero", "IronMan");
+
+  localStorage.setItem("movie", "Spiderman");
+
+  // store Number
+
+  localStorage.setItem("year", 2021);
+
+  // remove
+  // removeItem("key")
+
+  localStorage.removeItem("year");
+
+  // get from LS
+  // getItem("key")
+
+  let x = localStorage.getItem("hero");
+  console.log(x);
+  //clear()
+
+  // localStorage.clear();
+</script>

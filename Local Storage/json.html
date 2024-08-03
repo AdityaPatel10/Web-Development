@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+
+<script>
+  // To access array and object use JSON method for this
+
+  let dataObj = { name: "Aditya", age: 22 };
+
+  // JSON.stringify
+  // let jsonObj = {"name": "Aditya", "age": 22}
+
+  // COnverting to json object
+  let jsonConverted = JSON.stringify(dataObj);
+  // console.log(jsonConverted)
+
+  localStorage.setItem("dummyObj", jsonConverted);
+
+  let x = localStorage.getItem("dummyObj");
+  console.log(x);
+
+  // converting to normal object
+  // JSON.parse()
+
+  console.log(JSON.parse(x));
+  console.log(JSON.parse(x).name);
+</script>
