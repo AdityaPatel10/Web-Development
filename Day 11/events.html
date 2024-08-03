@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <button>Click me</button>
+  </body>
+</html>
+
+<script>
+  // addEventListener -> responding to event\
+  document.querySelector("button").addEventListener("click", myFunc); // click = onClick - event
+  document.querySelector("button").addEventListener("mouseenter", myFunction); // click = onClick - event
+
+  // whenever an event is triggered an additional event object is formed
+  // which will give you additional info about that event
+  // you can access that info in function parameter
+  function myFunc(event) {
+    console.log(event); // event - keyword
+    console.log(event.target);
+    console.log(event.target.innerText);
+    console.log("Button clicked");
+  }
+
+  function myFunction() {
+    console.log("Mouse Entered");
+  }
+</script>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      #container {
+        display: flex;
+        background-color: yellow;
+        justify-content: space-evenly;
+        padding: 20px;
+      }
+
+      #container > div {
+        width: 100px;
+        height: 100px;
+        background-color: teal;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+    </div>
+  </body>
+</html>
+
+<script>
+  let res = document.querySelectorAll("#container > div");
+  res.forEach(function (ele) {
+    ele.addEventListener("click", myFunc);
+  });
+
+  function myFunc(event) {
+    console.log(event.target.innerText);
+
+    console.log(
+      (event.target.nextElementSibling.style.backgroundColor = "blue")
+    );
+
+    console.log(
+      (event.target.previousElementSibling.style.backgroundColor = "red")
+    );
+
+    console.log((event.target.parentNode.style.backgroundColor = "black"));
+  }
+</script>

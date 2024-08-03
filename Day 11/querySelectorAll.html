@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <p>P1</p>
+    <p>P2</p>
+    <h1 class="test">Head-1</h1>
+    <h3>Head-3</h3>
+    <div class="test">Aditya</div>
+  </body>
+</html>
+
+<script>
+  //querySelectorAll
+  console.log(document.querySelector("p"));
+  console.log(document.querySelectorAll("p"));
+
+  var pTags = document.querySelectorAll("p");
+
+  // for (var i = 0; i < pTags.length; i++) {
+  //     pTags[i].style.backgroundColor = "red";
+  // }
+
+  pTags.forEach(function (ele) {
+    ele.style.backgroundColor = "red";
+  });
+</script>

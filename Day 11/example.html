@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="res">Display status here</h1>
+    <button onclick="pending()">Mark as Pending</button>
+    <button onclick="completed()">Mark as Completed</button>
+  </body>
+</html>
+
+<script>
+  let result = document.getElementById("res");
+  function pending() {
+    result.innerText = "Pending";
+    result.style.backgroundColor = "red";
+  }
+
+  function completed() {
+    result.innerText = "Completed";
+    result.style.backgroundColor = "green";
+  }
+</script>
