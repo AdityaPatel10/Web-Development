@@ -1,0 +1,23 @@
+#container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50%;
+    width: 200px;
+    height: 30px;
+}
+button{
+    margin-top: 10%;
+    width: 100px;
+    height: 30px;
+}
+form{
+    width: 10%;
+}

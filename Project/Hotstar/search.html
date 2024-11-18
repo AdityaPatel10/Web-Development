@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./search.css">
+</head>
+<body>
+    <div class="label">Hotstar</div>
+    <div id="slideshow"></div>
+    <div id="search"></div>
+        <input oninput = "debounce(searchMovie, 500)" type="text" placeholder="Search" id="search_input">
+        <!-- <button onclick="searchMovie()"><i class="fa-solid fa-magnifying-glass"></i></button> -->
+    </div>
+    <div id="cuersal" class="movies"></div>
+</body>
+</html>
+<script src="./search.js"></script>
